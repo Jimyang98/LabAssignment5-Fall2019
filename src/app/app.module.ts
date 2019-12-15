@@ -8,19 +8,26 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialDesignModule } from '../material-design/material-design.module';
+import { HomeComponent } from './home/home.component';
+
+import { AppRoutes } from './app.routes';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainHeaderComponent,
     MainFooterComponent,
-    MainContentComponent
+    MainContentComponent,
+    HomeComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialDesignModule
+    MaterialDesignModule,
+    AppRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]

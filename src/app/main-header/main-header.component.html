@@ -1,25 +1,18 @@
-<!-- <div class="row-one">
-        <div class="container-padding">
-            r1c1
-        </div>
-        <div (mouseleave)="resetGreeting()" (mouseenter)="showGreeting();" id="r1c2" class="container-padding">
-            {{greeting}}
-        </div>
-        <div class="container-padding">
-            r1c3
-        </div>
-    </div> -->
-<mat-toolbar color="basic" class="row-one">
-    <mat-toolbar-row>
+<mat-toolbar color="basic" class="toolbar">
+    <div class="row-one">
         <div class="container-padding">
             <span>r1c1</span>
         </div>
-        <div (mouseleave)="resetGreeting()" (mouseenter)="showGreeting();" id="r1c2" class="container-padding">
-            {{greeting}}
+        <div id="r1c2" class="container-padding">
+            <button class="nav-buttons" type="button" mat-raised-button color="basic" (click)="navigateTo('')">
+                Home
+            </button>
+            <button  class="nav-buttons" type="button" mat-raised-button color="basic" (click)="navigateTo('courses')">
+                Courses
+            </button>
         </div>
         <div class="container-padding">
             <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
-            <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
         </div>
-    </mat-toolbar-row>
+    </div>
 </mat-toolbar>
